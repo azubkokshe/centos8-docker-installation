@@ -31,3 +31,20 @@ service docker restart
 
 #logout or reboot
 ```
+
+### Run Docker commands without sudo
+
+```bash
+groupadd docker
+gpasswd -a <USER> docker
+service docker restart
+
+#logout or reboot
+```
+
+### Set IP Masquerading (if docker network not working)
+
+```bash
+firewall-cmd --zone=public --add-masquerade --permanent
+firewall-cmd --reload
+```
