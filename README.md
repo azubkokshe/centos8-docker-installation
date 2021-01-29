@@ -13,7 +13,7 @@ systemctl is-active docker
 systemctl is-enabled docker
 ```
 
-docker-compose
+### docker-compose
 ```bash
 sudo su
 curl -L "https://github.com/docker/compose/releases/download/1.23.2/docker-compose-$(uname -s)-$(uname -m)" -o docker-compose
