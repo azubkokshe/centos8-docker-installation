@@ -20,3 +20,14 @@ curl -L "https://github.com/docker/compose/releases/download/1.23.2/docker-compo
 mv docker-compose /usr/local/bin && sudo chmod +x /usr/local/bin/docker-compose
 /usr/local/bin/docker-compose
 ```
+
+
+### Run Docker commands without sudo
+
+```bash
+groupadd docker
+gpasswd -a <USER> docker
+service docker restart
+
+#logout or reboot
+```
